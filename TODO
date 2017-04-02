@@ -1,0 +1,6 @@
+TODO : 	- Mettre le preprocessor dans le sample code. (pour l'instant c'est le ZProcessor.)
+	- Peut-être redéfinir la méthode 'fit' du preprocessor, m'enfin c'est à voir plus tard
+	- Virer les *.pyc.
+Todo peut-être :
+	- Virer le répertoire my_code, qui ne sert en soi à rien. 
+	- Virer les z*.py, qui sont les classes données. 

@@ -7,6 +7,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.feature_selection import SelectKBest
 from sklearn import tree
+import Preprocessor
 import pickle
 
 class Classifier(BaseEstimator):
@@ -21,7 +22,10 @@ class Classifier(BaseEstimator):
         return
     
     def fit_ppl(self, X, y):
-        #TODO
+        clf = RandomForestClassifier()
+        prep = Preprocessor()
+        self.clf=Pipeline([('Prep', prep), ('classifieur', clf)])
+        self.clf.fit(X, y)
 	return
         
     ###############
